@@ -1,0 +1,126 @@
+<!-- patterns -->
+<!-- 0 1 2
+3 4 5 
+6 7 8 
+0 3 6
+1 4 7 
+2 5 8 
+0 4 8
+2 4 6  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #548687;
+            text-align: center;
+        }
+
+        .container {
+            height: 70%;
+
+        }
+
+        .box {
+            height: 29%;
+            width: 29%;
+            font-size: 60px;
+            border-radius: 1rem;
+            ;
+            border: none;
+            color: #b0413e;
+            background-color: #ffffc7;
+        }
+
+        .game {
+            width: 500px;
+            height: 450px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .reset,
+        .newGame {
+            display: block;
+            margin: 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: black;
+            font-size: 15px;
+        }
+         h1{
+            color: #ffffc7;
+            font-size: 40px;
+         }
+        #msg {
+            color: #ffffc7;
+            margin-top: 10px;
+            font-size: 20px;
+            height: 20px;
+            width: 98vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .foot{
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            word-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div id="msg"></div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button value="reset" id="newGame" class="newGame">New Game</button>
+            <button value="reset" id="reset" class="reset">Reset Game</button>
+        </div>
+        <footer class="foot">Made by Naman Arora</footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
